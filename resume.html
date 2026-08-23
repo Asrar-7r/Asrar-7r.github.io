@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ATS-friendly resume for Asrar Abdulrahman Al-Oufi, Frontend Developer.">
+  <title>Asrar Abdulrahman Al-Oufi | Resume</title>
+  <style>
+    :root {
+      color: #000;
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 24px;
+      background: #fff;
+      color: #000;
+      font-size: 11pt;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .actions a,
+    .actions button {
+      border: 1px solid #000;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      font: inherit;
+      padding: 8px 14px;
+      text-decoration: none;
+    }
+
+    .actions a:hover,
+    .actions button:hover {
+      background: #f2f2f2;
+    }
+
+    header {
+      border-bottom: 2px solid #000;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 24pt;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .headline {
+      font-size: 13pt;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .contact-line {
+      margin-bottom: 3px;
+    }
+
+    main {
+      display: block;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #000;
+      font-size: 12pt;
+      letter-spacing: 0.04em;
+      margin-bottom: 9px;
+      padding-bottom: 3px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 11pt;
+      margin-bottom: 2px;
+    }
+
+    .entry {
+      margin-bottom: 12px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry p {
+      margin-bottom: 4px;
+    }
+
+    ul {
+      margin: 4px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    .skills,
+    .languages {
+      margin-bottom: 0;
+    }
+
+    @media print {
+      @page {
+        margin: 15mm;
+        size: A4;
+      }
+
+      body {
+        max-width: none;
+        padding: 0;
+      }
+
+      .actions {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions" aria-label="Resume actions">
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+    <a href="index.html">Back to Portfolio</a>
+  </div>
+
+  <header>
+    <h1>ASRAR ABDULRAHMAN AL-OUFI</h1>
+    <p class="headline">Frontend Developer</p>
+    <p class="contact-line">Makkah, Saudi Arabia | asraraaloufi@gmail.com | +966593213844</p>
+    <p class="contact-line">LinkedIn: linkedin.com/in/asrar-al-ouf | GitHub: github.com/Asrar-7r</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">SUMMARY</h2>
+      <p>Bachelor’s degree in Computer Science from Umm Al-Qura University. Experienced in software development, artificial intelligence, and data-driven solutions with a strong foundation in systems design and problem-solving.</p>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">EXPERIENCE</h2>
+      <article class="entry">
+        <h3>Yusr — Smart WhatsApp Companion for Madinah Visitors</h3>
+        <p>Barmajan Al-Madinah Hackathon 2026 | Madinah, Saudi Arabia</p>
+        <p>09/2026</p>
+        <ul>
+          <li>Co-developed an AI-powered proactive WhatsApp agent that helps Madinah visitors plan and organize their journey through simple conversations.</li>
+          <li>Designed multilingual voice and text interactions suggesting Rawdah permits via Nusk and licensed tour guides, with smart follow-up notifications and human handoff when needed.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3>Nibras - Quranic AI App Hackathon Project | Makkon Association Hackathon</h3>
+        <p>06/2024 – 02/2025 | Riyadh, Saudi Arabia</p>
+        <ul>
+          <li>Developed an innovative AI-powered application serving the Holy Qur’an by enabling users to interact with a smart personal assistant for memorization, verse explanations, and error correction.</li>
+          <li>Awarded 75,000 SAR for the achievement.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3>Machine Learning Intern | Samsung Innovation Campus with Misk Skills</h3>
+        <p>09/2024 – 10/2024 | Remote</p>
+        <ul>
+          <li>Developed machine learning models using Python, TensorFlow, and Scikit-learn to solve real-world problems.</li>
+          <li>Cooperated with team members to create full AI solutions.</li>
+          <li>Recognized for achieving high model accuracy and delivering clear presentations.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">EDUCATION</h2>
+      <p><strong>Bachelor of Science in Computer Science | Umm Al-Qura University</strong><br>08/2018 – 06/2023 | Makkah, Saudi Arabia</p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">SKILLS</h2>
+      <p class="skills"><strong>Technical:</strong> HTML, CSS, JavaScript, Python<br><strong>Professional:</strong> Teamwork, Problem Solving, Time Management, Analytical Thinking</p>
+    </section>
+
+    <section aria-labelledby="certificates-heading">
+      <h2 id="certificates-heading">CERTIFICATES</h2>
+      <ul>
+        <li>Fundamentals of Artificial Intelligence — SDAIA (August 2025)</li>
+        <li>Data Analysis — Ministry of Communications and Information Technology (November 2023)</li>
+        <li>JavaScript Development — Coursera (February 2023)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="languages-heading">
+      <h2 id="languages-heading">LANGUAGES</h2>
+      <p class="languages">Arabic (Native) | English (Advanced)</p>
+    </section>
+  </main>
+</body>
+</html>
